@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import * as echarts from 'echarts';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
+import Image from 'next/image';
 
 const MainComponent = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -53,11 +54,11 @@ const MainComponent = () => {
             type: 'bar',
             data: [12, 25, 48, 65, 82, 94],
             itemStyle: {
-              color: '#4F46E5',
+              color: '#00A63E',
             },
           },
         ],
-        color: ['#4F46E5'],
+        color: ['#00A63E'],
       };
       myChart.setOption(option);
       const handleResize = () => {
@@ -262,7 +263,7 @@ const MainComponent = () => {
       >
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-indigo-600">TechNova</h1>
+            <Image height={200} width={180} src={'/asset/header_logo.png'} />
           </div>
           <div className="hidden md:flex items-center space-x-8">
             <nav>
@@ -270,7 +271,7 @@ const MainComponent = () => {
                 <li>
                   <a
                     href="#home"
-                    className="text-gray-700 hover:text-indigo-600 transition-colors"
+                    className="text-gray-700 hover:text-green-600 transition-colors"
                   >
                     Home
                   </a>
@@ -278,7 +279,7 @@ const MainComponent = () => {
                 <li>
                   <a
                     href="#services"
-                    className="text-gray-700 hover:text-indigo-600 transition-colors"
+                    className="text-gray-700 hover:text-green-600 transition-colors"
                   >
                     Services
                   </a>
@@ -286,7 +287,7 @@ const MainComponent = () => {
                 <li>
                   <a
                     href="#projects"
-                    className="text-gray-700 hover:text-indigo-600 transition-colors"
+                    className="text-gray-700 hover:text-green-600 transition-colors"
                   >
                     Projects
                   </a>
@@ -294,7 +295,7 @@ const MainComponent = () => {
                 <li>
                   <a
                     href="#team"
-                    className="text-gray-700 hover:text-indigo-600 transition-colors"
+                    className="text-gray-700 hover:text-green-600 transition-colors"
                   >
                     Team
                   </a>
@@ -302,7 +303,7 @@ const MainComponent = () => {
                 <li>
                   <a
                     href="#case-studies"
-                    className="text-gray-700 hover:text-indigo-600 transition-colors"
+                    className="text-gray-700 hover:text-green-600 transition-colors"
                   >
                     Case Studies
                   </a>
@@ -310,14 +311,14 @@ const MainComponent = () => {
                 <li>
                   <a
                     href="#contact"
-                    className="text-gray-700 hover:text-indigo-600 transition-colors"
+                    className="text-gray-700 hover:text-green-600 transition-colors"
                   >
                     Contact
                   </a>
                 </li>
               </ul>
             </nav>
-            <button className="bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors !rounded-button whitespace-nowrap cursor-pointer">
+            <button className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors !rounded-button whitespace-nowrap cursor-pointer">
               Get in Touch
             </button>
           </div>
@@ -342,7 +343,7 @@ const MainComponent = () => {
                 <li>
                   <a
                     href="#home"
-                    className="block text-gray-700 hover:text-indigo-600 transition-colors"
+                    className="block text-gray-700 hover:text-green-600 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Home
@@ -351,7 +352,7 @@ const MainComponent = () => {
                 <li>
                   <a
                     href="#services"
-                    className="block text-gray-700 hover:text-indigo-600 transition-colors"
+                    className="block text-gray-700 hover:text-green-600 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Services
@@ -360,7 +361,7 @@ const MainComponent = () => {
                 <li>
                   <a
                     href="#projects"
-                    className="block text-gray-700 hover:text-indigo-600 transition-colors"
+                    className="block text-gray-700 hover:text-green-600 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Projects
@@ -369,7 +370,7 @@ const MainComponent = () => {
                 <li>
                   <a
                     href="#team"
-                    className="block text-gray-700 hover:text-indigo-600 transition-colors"
+                    className="block text-gray-700 hover:text-green-600 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Team
@@ -378,7 +379,7 @@ const MainComponent = () => {
                 <li>
                   <a
                     href="#case-studies"
-                    className="block text-gray-700 hover:text-indigo-600 transition-colors"
+                    className="block text-gray-700 hover:text-green-600 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Case Studies
@@ -387,14 +388,14 @@ const MainComponent = () => {
                 <li>
                   <a
                     href="#contact"
-                    className="block text-gray-700 hover:text-indigo-600 transition-colors"
+                    className="block text-gray-700 hover:text-green-600 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Contact
                   </a>
                 </li>
                 <li>
-                  <button className="w-full bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors !rounded-button whitespace-nowrap cursor-pointer">
+                  <button className="w-full bg-green-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors !rounded-button whitespace-nowrap cursor-pointer">
                     Get in Touch
                   </button>
                 </li>
@@ -418,7 +419,7 @@ const MainComponent = () => {
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Transforming Ideas Into{' '}
-              <span className="text-indigo-600">Digital Reality</span>
+              <span className="text-green-600">Digital Reality</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
               We craft innovative software solutions that drive business growth
@@ -426,10 +427,10 @@ const MainComponent = () => {
               your vision into powerful, scalable technology.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="bg-indigo-600 text-white px-8 py-3 rounded-md hover:bg-indigo-700 transition-colors text-lg !rounded-button whitespace-nowrap cursor-pointer">
+              <button className="bg-green-600 text-white px-8 py-3 rounded-md hover:bg-indigo-700 transition-colors text-lg !rounded-button whitespace-nowrap cursor-pointer">
                 Explore Our Portfolio
               </button>
-              <button className="bg-transparent border-2 border-indigo-600 text-indigo-600 px-8 py-3 rounded-md hover:bg-indigo-50 transition-colors text-lg !rounded-button whitespace-nowrap cursor-pointer">
+              <button className="bg-transparent border-2 border-green-600 text-green-600 px-8 py-3 rounded-md hover:bg-indigo-50 transition-colors text-lg !rounded-button whitespace-nowrap cursor-pointer">
                 Our Services
               </button>
             </div>
@@ -438,7 +439,7 @@ const MainComponent = () => {
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
           <a
             href="#services"
-            className="text-gray-500 hover:text-indigo-600 transition-colors"
+            className="text-gray-500 hover:text-green-600 transition-colors"
           >
             <i className="fa-solid fa-chevron-down text-2xl"></i>
           </a>
@@ -463,7 +464,7 @@ const MainComponent = () => {
                 key={index}
                 className="bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
               >
-                <div className="text-indigo-600 mb-4">
+                <div className="text-green-600 mb-4">
                   <i className={`${service.icon} text-4xl`}></i>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -472,7 +473,7 @@ const MainComponent = () => {
                 <p className="text-gray-600 mb-4">{service.description}</p>
                 <a
                   href="#"
-                  className="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center transition-colors cursor-pointer"
+                  className="text-green-600 hover:text-indigo-800 font-medium inline-flex items-center transition-colors cursor-pointer"
                 >
                   Learn More <i className="fa-solid fa-arrow-right ml-2"></i>
                 </a>
@@ -497,7 +498,7 @@ const MainComponent = () => {
                 onClick={() => setActiveFilter('all')}
                 className={`${
                   activeFilter === 'all'
-                    ? 'bg-indigo-600 text-white'
+                    ? 'bg-green-600 text-white'
                     : 'bg-gray-200 text-gray-700'
                 } px-4 py-2 rounded-md transition-colors mt-2 !rounded-button whitespace-nowrap cursor-pointer`}
               >
@@ -507,7 +508,7 @@ const MainComponent = () => {
                 onClick={() => setActiveFilter('web-design')}
                 className={`${
                   activeFilter === 'web-design'
-                    ? 'bg-indigo-600 text-white'
+                    ? 'bg-green-600 text-white'
                     : 'bg-gray-200 text-gray-700'
                 } px-4 py-2 rounded-md transition-colors !rounded-button whitespace-nowrap cursor-pointer`}
               >
@@ -517,7 +518,7 @@ const MainComponent = () => {
                 onClick={() => setActiveFilter('app-development')}
                 className={`${
                   activeFilter === 'app-development'
-                    ? 'bg-indigo-600 text-white'
+                    ? 'bg-green-600 text-white'
                     : 'bg-gray-200 text-gray-700'
                 } px-4 py-2 rounded-md transition-colors !rounded-button whitespace-nowrap cursor-pointer`}
               >
@@ -527,7 +528,7 @@ const MainComponent = () => {
                 onClick={() => setActiveFilter('software')}
                 className={`${
                   activeFilter === 'software'
-                    ? 'bg-indigo-600 text-white'
+                    ? 'bg-green-600 text-white'
                     : 'bg-gray-200 text-gray-700'
                 } px-4 py-2 rounded-md transition-colors !rounded-button whitespace-nowrap cursor-pointer`}
               >
@@ -537,7 +538,7 @@ const MainComponent = () => {
                 onClick={() => setActiveFilter('ai-solutions')}
                 className={`${
                   activeFilter === 'ai-solutions'
-                    ? 'bg-indigo-600 text-white'
+                    ? 'bg-green-600 text-white'
                     : 'bg-gray-200 text-gray-700'
                 } px-4 py-2 rounded-md transition-colors !rounded-button whitespace-nowrap cursor-pointer`}
               >
@@ -559,7 +560,7 @@ const MainComponent = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <span className="inline-block px-3 py-1 text-xs font-semibold text-indigo-600 bg-indigo-100 rounded-full mb-3">
+                  <span className="inline-block px-3 py-1 text-xs font-semibold text-green-600 bg-indigo-100 rounded-full mb-3">
                     {project.category
                       .split('-')
                       .map(
@@ -573,7 +574,7 @@ const MainComponent = () => {
                   <p className="text-gray-600 mb-4">Client: {project.client}</p>
                   <a
                     href="#"
-                    className="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center transition-colors"
+                    className="text-green-600 hover:text-indigo-800 font-medium inline-flex items-center transition-colors"
                   >
                     View Case Study{' '}
                     <i className="fa-solid fa-arrow-right ml-2"></i>
@@ -597,7 +598,7 @@ const MainComponent = () => {
               results.
             </p>
           </div>
-          <Swiper
+          {/* <Swiper
             modules={[Pagination, Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
@@ -605,72 +606,75 @@ const MainComponent = () => {
             autoplay={{ delay: 5000, disableOnInteraction: false }}
             className="case-studies-slider"
           >
-            {caseStudies.map((study, index) => (
-              <SwiperSlide key={index}>
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <div className="flex flex-col lg:flex-row">
-                    <div className="lg:w-1/2">
-                      <div className="relative h-80 lg:h-full">
-                        <div className="absolute inset-0 flex">
-                          <div className="w-1/2 overflow-hidden">
-                            <img
-                              src={study.beforeImage}
-                              alt={`${study.title} Before`}
-                              className="w-full h-full object-cover"
-                            />
-                            <div className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 text-sm font-semibold rounded">
-                              Before
-                            </div>
-                          </div>
-                          <div className="w-1/2 overflow-hidden">
-                            <img
-                              src={study.afterImage}
-                              alt={`${study.title} After`}
-                              className="w-full h-full object-cover"
-                            />
-                            <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 text-sm font-semibold rounded">
-                              After
-                            </div>
-                          </div>
+      
+          </Swiper> */}
+
+          {caseStudies.map((study, index) => (
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="flex flex-col lg:flex-row">
+                <div className="lg:w-1/2">
+                  <div className="relative h-80 lg:h-full">
+                    <div className="absolute inset-0 flex">
+                      <div className="w-1/2 overflow-hidden">
+                        <img
+                          src={study.beforeImage}
+                          alt={`${study.title} Before`}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 text-sm font-semibold rounded">
+                          Before
+                        </div>
+                      </div>
+                      <div className="w-1/2 overflow-hidden">
+                        <img
+                          src={study.afterImage}
+                          alt={`${study.title} After`}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 text-sm font-semibold rounded">
+                          After
                         </div>
                       </div>
                     </div>
-                    <div className="lg:w-1/2 p-8">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                        {study.title}
-                      </h3>
-                      <p className="text-indigo-600 font-medium mb-4">
-                        Client: {study.client}
-                      </p>
-                      <p className="text-gray-600 mb-6">{study.overview}</p>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-3">
-                        Key Achievements:
-                      </h4>
-                      <ul className="space-y-2 mb-6">
-                        {study.achievements.map((achievement, i) => (
-                          <li key={i} className="flex items-start">
-                            <i className="fa-solid fa-check-circle text-green-500 mt-1 mr-2"></i>
-                            <span className="text-gray-600">{achievement}</span>
-                          </li>
-                        ))}
-                      </ul>
-                      <div className="bg-gray-50 p-4 rounded-lg mb-6">
-                        <p className="text-gray-600 italic mb-2">
-                          "{study.testimonial}"
-                        </p>
-                        <p className="text-gray-800 font-medium">
-                          — {study.author}
-                        </p>
-                      </div>
-                      <button className="bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors !rounded-button whitespace-nowrap cursor-pointer">
-                        View Full Case Study
-                      </button>
-                    </div>
                   </div>
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+                <div className="lg:w-1/2 p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    {study.title}
+                  </h3>
+                  <p className="text-green-600 font-medium mb-4">
+                    Client: {study.client}
+                  </p>
+                  <p className="text-gray-600 mb-6">{study.overview}</p>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                    Key Achievements:
+                  </h4>
+                  <ul className="space-y-2 mb-6">
+                    {study.achievements.map((achievement, i) => (
+                      <li key={i} className="flex items-start">
+                        <i className="fa-solid fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span className="text-gray-600">{achievement}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="bg-gray-50 p-4 rounded-lg mb-6">
+                    <p className="text-gray-600 italic mb-2">
+                      "{study.testimonial}"
+                    </p>
+                    <p className="text-gray-800 font-medium">
+                      — {study.author}
+                    </p>
+                  </div>
+                  <button className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors !rounded-button whitespace-nowrap cursor-pointer">
+                    View Full Case Study
+                  </button>
+                </div>
+              </div>
+            </div>
+            // <SwiperSlide key={index}>
+
+            // </SwiperSlide>
+          ))}
         </div>
       </section>
       {/* Team Expertise */}
@@ -702,7 +706,7 @@ const MainComponent = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-indigo-600 font-medium mb-2">
+                  <p className="text-green-600 font-medium mb-2">
                     {member.role}
                   </p>
                   <p className="text-gray-600 mb-4">
@@ -713,19 +717,19 @@ const MainComponent = () => {
                   <div className="mt-4 flex space-x-3">
                     <a
                       href="#"
-                      className="text-gray-500 hover:text-indigo-600 transition-colors cursor-pointer"
+                      className="text-gray-500 hover:text-green-600 transition-colors cursor-pointer"
                     >
                       <i className="fa-brands fa-linkedin text-lg"></i>
                     </a>
                     <a
                       href="#"
-                      className="text-gray-500 hover:text-indigo-600 transition-colors cursor-pointer"
+                      className="text-gray-500 hover:text-green-600 transition-colors cursor-pointer"
                     >
                       <i className="fa-brands fa-twitter text-lg"></i>
                     </a>
                     <a
                       href="#"
-                      className="text-gray-500 hover:text-indigo-600 transition-colors cursor-pointer"
+                      className="text-gray-500 hover:text-green-600 transition-colors cursor-pointer"
                     >
                       <i className="fa-solid fa-envelope text-lg"></i>
                     </a>
@@ -749,25 +753,25 @@ const MainComponent = () => {
                 </p>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-indigo-600 mb-2">
+                    <div className="text-3xl font-bold text-green-600 mb-2">
                       300+
                     </div>
                     <div className="text-gray-600">Projects Completed</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-indigo-600 mb-2">
+                    <div className="text-3xl font-bold text-green-600 mb-2">
                       150+
                     </div>
                     <div className="text-gray-600">Happy Clients</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-indigo-600 mb-2">
+                    <div className="text-3xl font-bold text-green-600 mb-2">
                       25+
                     </div>
                     <div className="text-gray-600">Team Members</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-indigo-600 mb-2">
+                    <div className="text-3xl font-bold text-green-600 mb-2">
                       15+
                     </div>
                     <div className="text-gray-600">Industry Awards</div>
@@ -807,7 +811,7 @@ const MainComponent = () => {
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-sm"
                     placeholder="John Doe"
                   />
                 </div>
@@ -821,7 +825,7 @@ const MainComponent = () => {
                   <input
                     type="email"
                     id="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-sm"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -835,7 +839,7 @@ const MainComponent = () => {
                   <div className="relative">
                     <select
                       id="project-type"
-                      className="appearance-none w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm bg-white"
+                      className="appearance-none w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-sm bg-white"
                     >
                       <option value="">Select a project type</option>
                       <option value="web-development">Web Development</option>
@@ -860,19 +864,19 @@ const MainComponent = () => {
                   <textarea
                     id="message"
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-sm"
                     placeholder="Tell us about your project..."
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition-colors font-medium !rounded-button whitespace-nowrap cursor-pointer"
+                  className="w-full bg-green-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition-colors font-medium !rounded-button whitespace-nowrap cursor-pointer"
                 >
                   Send Message
                 </button>
               </form>
             </div>
-            <div className="lg:w-1/2 bg-indigo-600 p-8 text-white">
+            <div className="lg:w-1/2 bg-green-600 p-8 text-white">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -933,25 +937,25 @@ const MainComponent = () => {
                 <div className="flex space-x-4">
                   <a
                     href="#"
-                    className="bg-white text-indigo-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-indigo-100 transition-colors cursor-pointer"
+                    className="bg-white text-green-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-indigo-100 transition-colors cursor-pointer"
                   >
                     <i className="fa-brands fa-facebook-f"></i>
                   </a>
                   <a
                     href="#"
-                    className="bg-white text-indigo-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-indigo-100 transition-colors cursor-pointer"
+                    className="bg-white text-green-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-indigo-100 transition-colors cursor-pointer"
                   >
                     <i className="fa-brands fa-twitter"></i>
                   </a>
                   <a
                     href="#"
-                    className="bg-white text-indigo-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-indigo-100 transition-colors cursor-pointer"
+                    className="bg-white text-green-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-indigo-100 transition-colors cursor-pointer"
                   >
                     <i className="fa-brands fa-linkedin-in"></i>
                   </a>
                   <a
                     href="#"
-                    className="bg-white text-indigo-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-indigo-100 transition-colors cursor-pointer"
+                    className="bg-white text-green-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-indigo-100 transition-colors cursor-pointer"
                   >
                     <i className="fa-brands fa-instagram"></i>
                   </a>
@@ -966,9 +970,8 @@ const MainComponent = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-2xl font-bold text-indigo-400 mb-4">
-                TechNova
-              </h3>
+              <Image height={200} width={180} src={'/asset/header_logo.png'} />
+
               <p className="text-gray-400 mb-6">
                 Innovative software solutions that drive business growth and
                 deliver exceptional user experiences.
@@ -1116,11 +1119,11 @@ const MainComponent = () => {
                 <input
                   type="email"
                   placeholder="Your email address"
-                  className="px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900 text-sm border-none flex-grow"
+                  className="px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500 text-gray-900 text-sm border-none flex-grow"
                 />
                 <button
                   type="submit"
-                  className="bg-indigo-600 text-white px-4 py-2 rounded-r-md hover:bg-indigo-700 transition-colors !rounded-button whitespace-nowrap cursor-pointer"
+                  className="bg-green-600 text-white px-4 py-2 rounded-r-md hover:bg-indigo-700 transition-colors !rounded-button whitespace-nowrap cursor-pointer"
                 >
                   Subscribe
                 </button>
@@ -1166,7 +1169,7 @@ const MainComponent = () => {
       {/* Back to Top Button */}
       <a
         href="#home"
-        className="fixed bottom-8 right-8 bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-indigo-700 transition-colors !rounded-button cursor-pointer"
+        className="fixed bottom-8 right-8 bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-indigo-700 transition-colors !rounded-button cursor-pointer"
       >
         <i className="fa-solid fa-arrow-up"></i>
       </a>
