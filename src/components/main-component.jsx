@@ -74,14 +74,21 @@ const MainComponent = () => {
   const projects = [
     {
       id: 1,
+      title: 'International School & College',
+      client: 'International School & College.',
+      category: 'website development',
+      image: '/asset/school1.PNG',
+    },
+    {
+      id: 2,
       title: 'E-Commerce Platform Redesign',
       client: 'GlobalShop Inc.',
-      category: 'web-design',
+      category: 'website development',
       image:
         'https://readdy.ai/api/search-image?query=Modern%20e-commerce%20website%20interface%20with%20clean%20design%2C%20product%20grid%20layout%2C%20shopping%20cart%20functionality%2C%20displayed%20on%20laptop%20screen%20with%20soft%20ambient%20lighting%20and%20minimal%20background&width=600&height=400&seq=1&orientation=landscape',
     },
     {
-      id: 2,
+      id: 3,
       title: 'Financial Dashboard Application',
       client: 'InvestSmart LLC',
       category: 'app-development',
@@ -89,7 +96,7 @@ const MainComponent = () => {
         'https://readdy.ai/api/search-image?query=Financial%20dashboard%20application%20with%20charts%2C%20graphs%2C%20and%20data%20visualization%20tools%20showing%20market%20trends%20and%20investment%20analytics%20on%20dark%20themed%20interface%20with%20blue%20accent%20colors&width=600&height=400&seq=2&orientation=landscape',
     },
     {
-      id: 3,
+      id: 4,
       title: 'Healthcare Management System',
       client: 'MediCare Solutions',
       category: 'software',
@@ -97,7 +104,7 @@ const MainComponent = () => {
         'https://readdy.ai/api/search-image?query=Healthcare%20management%20system%20interface%20showing%20patient%20records%2C%20appointment%20scheduling%2C%20and%20medical%20data%20visualization%20with%20clean%20white%20and%20blue%20color%20scheme%20on%20desktop%20screen&width=600&height=400&seq=3&orientation=landscape',
     },
     {
-      id: 4,
+      id: 5,
       title: 'AI-Powered Recommendation Engine',
       client: 'TechInnovate',
       category: 'ai-solutions',
@@ -105,7 +112,7 @@ const MainComponent = () => {
         'https://readdy.ai/api/search-image?query=Futuristic%20AI%20recommendation%20engine%20interface%20with%20neural%20network%20visualization%2C%20data%20flows%2C%20and%20personalized%20content%20suggestions%20in%20purple%20and%20blue%20gradient%20background&width=600&height=400&seq=4&orientation=landscape',
     },
     {
-      id: 5,
+      id: 6,
       title: 'Mobile Banking Application',
       client: 'SecureBank',
       category: 'app-development',
@@ -113,10 +120,10 @@ const MainComponent = () => {
         'https://readdy.ai/api/search-image?query=Mobile%20banking%20application%20shown%20on%20smartphone%20with%20transaction%20history%2C%20account%20balance%2C%20payment%20features%20in%20a%20professional%20blue%20and%20white%20interface%20with%20security%20elements&width=600&height=400&seq=5&orientation=landscape',
     },
     {
-      id: 6,
+      id: 7,
       title: 'Corporate Website Overhaul',
       client: 'Enterprise Solutions',
-      category: 'web-design',
+      category: 'website development',
       image:
         'https://readdy.ai/api/search-image?query=Corporate%20website%20with%20professional%20layout%20featuring%20hero%20section%2C%20service%20cards%2C%20team%20profiles%2C%20and%20contact%20information%20in%20elegant%20blue%20and%20gray%20color%20scheme%20on%20desktop%20display&width=600&height=400&seq=6&orientation=landscape',
     },
@@ -505,14 +512,14 @@ const MainComponent = () => {
                 All Projects
               </button>
               <button
-                onClick={() => setActiveFilter('web-design')}
+                onClick={() => setActiveFilter('website development')}
                 className={`${
-                  activeFilter === 'web-design'
+                  activeFilter === 'website development'
                     ? 'bg-green-600 text-white'
                     : 'bg-gray-200 text-gray-700'
                 } px-4 py-2 rounded-md transition-colors !rounded-button whitespace-nowrap cursor-pointer`}
               >
-                Web Design
+                Website Development
               </button>
               <button
                 onClick={() => setActiveFilter('app-development')}
